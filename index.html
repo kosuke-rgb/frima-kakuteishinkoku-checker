@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>フリマの確定申告 要否チェッカー | メルカリ・ラクマの売上は申告が必要？</title>
+<meta name="description" content="メルカリ・ラクマなどフリマアプリの売上について、確定申告が必要かどうかを判定できる無料ツールです。「生活用動産は非課税」という基本ルールから、せどり・転売品や30万円超の貴金属・美術品の例外まで、質問に答えるだけでチェックできます。">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://webtools-labs.com/frima-kakuteishinkoku-checker/">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2370765779014113" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NKK5TXCQEK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NKK5TXCQEK');
+</script>
+<script>
+(function () {
+  var fired = false;
+  function fireOnce() {
+    if (fired) return;
+    fired = true;
+    if (typeof gtag === 'function') gtag('event', 'tool_used', { tool_name: document.title });
+  }
+  document.addEventListener('input', fireOnce, true);
+  document.addEventListener('change', fireOnce, true);
+})();
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f766e'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='white' font-family='sans-serif'%3E%EF%BF%A5%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="webtools-labs">
+<meta property="og:title" content="フリマの確定申告 要否チェッカー | メルカリ・ラクマの売上は申告が必要？">
+<meta property="og:description" content="質問に答えるだけで、フリマアプリの売上について確定申告が必要かどうかが分かる無料ツールです。">
+<meta property="og:url" content="https://webtools-labs.com/frima-kakuteishinkoku-checker/">
+<meta property="og:image" content="https://webtools-labs.com/frima-kakuteishinkoku-checker/og-image.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="フリマの確定申告 要否チェッカー">
+<meta name="twitter:description" content="メルカリ・ラクマの売上、確定申告は必要？質問に答えるだけで判定できる無料ツール。">
+<meta name="twitter:image" content="https://webtools-labs.com/frima-kakuteishinkoku-checker/og-image.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "フリマの確定申告 要否チェッカー",
+  "url": "https://webtools-labs.com/frima-kakuteishinkoku-checker/",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "description": "メルカリ・ラクマなどフリマアプリの売上について、確定申告が必要かどうかを質問形式で判定できる無料ツール。",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" },
+  "inLanguage": "ja"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "メルカリで着なくなった服や本を売っただけでも確定申告は必要ですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "原則不要です。普段の生活で使っていた衣類・本・家具・日用品などは「生活用動産」と呼ばれ、これらを売って得た利益には所得税がかかりません（非課税）。ただし1点あたり30万円を超える貴金属・宝石・美術品・骨とう品は例外的に課税対象になります。" }
+    },
+    {
+      "@type": "Question",
+      "name": "せどり・転売目的で仕入れた商品を売る場合はどうなりますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "「生活用動産」には当たらないため非課税の対象外です。利益は雑所得または事業所得として扱われ、一定の金額を超えると確定申告が必要になります。仕入れ値や送料などの経費を差し引いた「利益」で判断する点に注意してください。" }
+    },
+    {
+      "@type": "Question",
+      "name": "会社員が副業としてフリマで転売している場合の申告ラインはいくらですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "給与を1か所から受けていて年末調整が済んでいる会社員の場合、給与以外の所得（フリマの利益を含む）の合計が年間20万円を超えると所得税の確定申告が必要になります（いわゆる20万円ルール）。20万円以下でも住民税の申告は別途必要になる場合があるので注意してください。" }
+    },
+    {
+      "@type": "Question",
+      "name": "学生や専業主婦（夫）で給与所得が無い場合はいくらから申告が必要ですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "給与所得が無い場合、基礎控除額である48万円を超える所得（利益）があると原則として確定申告が必要になります。20万円ルールは給与所得者向けの特例なので、給与所得がない方には適用されません。" }
+    },
+    {
+      "@type": "Question",
+      "name": "30万円を超えるブランド品やアクセサリーを1点だけ売った場合はどうなりますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "生活用動産であっても、1点あたりの譲渡価額が30万円を超える貴金属・宝石・美術品・骨とう品等は非課税の対象外となり、譲渡所得として課税される可能性があります。取得費（購入価格）を差し引いた利益部分が課税対象です。" }
+    },
+    {
+      "@type": "Question",
+      "name": "確定申告をしなかった場合、どうなりますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "申告が必要な所得があるのに申告しなかった場合、後日税務署から指摘を受けると、本来の税額に加えて無申告加算税・延滞税等のペナルティが課される可能性があります。判断に迷う場合は税務署や税理士に相談することをおすすめします。" }
+    }
+  ]
+}
+</script>
+<style>
+:root {
+  --bg: #ffffff;
+  --surface-2: #f7f7f7;
+  --ink: #1a1a1a;
+  --muted: #767676;
+  --line: #e3e3e3;
+  --accent: #0f766e;
+  --best-bg: #f0f8f6;
+  --warn-bg: #fff7ed;
+  --warn-ink: #9a5b00;
+  --bad-bg: #fef2f2;
+  --bad-ink: #b91c1c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+.page { max-width: 720px; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+header.masthead { margin-bottom: 1.5rem; }
+h1 {
+  font-weight: 700;
+  font-size: clamp(1.4rem, 4.5vw, 1.7rem);
+  margin: 0 0 0.7rem;
+  letter-spacing: 0.01em;
+}
+p.lede { color: var(--muted); margin: 0; max-width: 60ch; font-size: 0.95rem; }
+.updated-note { display: block; margin-top: 0.9rem; font-size: 0.78rem; color: var(--muted); }
+
+.notice-box {
+  background: var(--warn-bg); color: var(--warn-ink); border-radius: 8px;
+  padding: 0.9rem 1.1rem; font-size: 0.85rem; margin-bottom: 2rem;
+}
+
+section { margin-bottom: 2.5rem; }
+h2 { font-size: 1.05rem; font-weight: 700; margin: 0 0 1rem; }
+
+.field-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem; }
+.field { flex: 1; min-width: 220px; }
+.field label { display: block; font-size: 0.83rem; color: var(--muted); margin-bottom: 0.35rem; }
+.field input[type="number"], .field select {
+  width: 100%; font-variant-numeric: tabular-nums; font-size: 1.05rem; font-family: inherit;
+  padding: 0.55rem 0.7rem; border: 1px solid var(--line); border-radius: 6px;
+  background: var(--bg); color: var(--ink);
+}
+.field input:focus, .field select:focus { outline: none; border-color: var(--accent); }
+
+.check-row { display: flex; align-items: flex-start; gap: 0.6rem; margin-bottom: 1.25rem; padding: 0.8rem 1rem; background: var(--surface-2); border-radius: 8px; }
+.check-row input[type="checkbox"] { margin-top: 0.25rem; flex-shrink: 0; width: 1.1rem; height: 1.1rem; }
+.check-row label { font-size: 0.88rem; }
+
+.status-box { border-radius: 10px; padding: 1.1rem 1.2rem; margin-bottom: 1.25rem; font-size: 0.92rem; }
+.status-box.ok { background: var(--best-bg); color: var(--ink); }
+.status-box.warn { background: var(--warn-bg); color: var(--warn-ink); }
+.status-box.bad { background: var(--bad-bg); color: var(--bad-ink); }
+.status-box strong { font-size: 1.15rem; }
+.status-box ul { margin: 0.6rem 0 0; padding-left: 1.2rem; }
+.status-box li { margin-bottom: 0.3rem; }
+
+.ref-table { overflow-x: auto; }
+.ref-table table { width: 100%; border-collapse: collapse; font-size: 0.86rem; min-width: 420px; }
+.ref-table th, .ref-table td { padding: 0.55rem 0.5rem; border-bottom: 1px solid var(--line); text-align: left; }
+.ref-table td.num { font-variant-numeric: tabular-nums; text-align: right; }
+.ref-table tr.highlight td { background: var(--best-bg); font-weight: 700; }
+
+.disclaimer { font-size: 0.78rem; color: var(--muted); margin-top: 1rem; }
+
+.share-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.1rem; }
+.share-btn {
+  display: inline-flex; align-items: center; padding: 0.5rem 1rem; border-radius: 999px;
+  color: #fff; text-decoration: none; font-size: 0.82rem; font-weight: 700;
+}
+.share-btn:hover { opacity: 0.85; }
+.share-x { background: #000; }
+.share-line { background: #06c755; }
+.share-fb { background: #1877f2; }
+.share-hatena { background: #00a4de; }
+
+.ad-slot { margin: 2.5rem 0; text-align: center; min-height: 100px; }
+
+.pr-box {
+  border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px;
+  padding: 1.2rem 1.3rem; margin: 2.5rem 0; background: var(--best-bg);
+}
+.pr-box .pr-label {
+  display: inline-flex; align-items: center; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em;
+  color: #fff; background: var(--accent); border-radius: 999px;
+  padding: 0.2rem 0.7rem; margin-bottom: 0.8rem;
+}
+.pr-box p.pr-lede { color: var(--ink); font-size: 0.92rem; margin: 0 0 1rem; max-width: none; line-height: 1.7; }
+.pr-box .pr-banner { text-align: center; }
+.pr-box .pr-cta {
+  display: inline-block; background: var(--accent); color: #fff; font-weight: 700;
+  font-size: 0.85rem; padding: 0.6rem 1.3rem; border-radius: 999px; text-decoration: none;
+}
+.pr-box .pr-cta:hover { opacity: 0.85; }
+
+.contact-box textarea {
+  width: 100%; min-height: 6rem; font-family: inherit; font-size: 0.92rem;
+  padding: 0.7rem; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink);
+  resize: vertical; margin-bottom: 0.6rem;
+}
+.contact-box input[type="email"] {
+  width: 100%; font-family: inherit; font-size: 0.92rem;
+  padding: 0.6rem 0.7rem; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink);
+  margin-bottom: 0.6rem;
+}
+.contact-box textarea:focus, .contact-box input:focus { outline: none; border-color: var(--accent); }
+.contact-box button {
+  font-family: inherit; font-weight: 700; font-size: 0.9rem; padding: 0.6rem 1.4rem;
+  border: none; border-radius: 6px; background: var(--accent); color: #fff; cursor: pointer;
+}
+.contact-box button:disabled { opacity: 0.5; cursor: not-allowed; }
+.contact-status { font-size: 0.85rem; margin-top: 0.6rem; }
+.contact-status.ok { color: var(--accent); }
+.contact-status.err { color: #b91c1c; }
+
+footer.site-footer {
+  margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
+  font-size: 0.78rem; color: var(--muted);
+}
+footer.site-footer p { margin: 0 0 0.5rem; }
+footer.site-footer a { color: var(--accent); }
+
+.faq-item { border-bottom: 1px solid var(--line); padding: 0.9rem 0; }
+.faq-item:last-child { border-bottom: none; }
+.faq-item summary {
+  cursor: pointer; font-weight: 700; font-size: 0.92rem; list-style: none;
+  position: relative; padding-right: 1.6rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+'; position: absolute; right: 0; top: 0; color: var(--accent); font-weight: 700; font-size: 1.1rem;
+}
+.faq-item[open] summary::after { content: '−'; }
+.faq-item p { margin: 0.7rem 0 0; color: var(--muted); font-size: 0.88rem; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="masthead">
+    <h1>フリマの確定申告 要否チェッカー</h1>
+    <p class="lede">メルカリ・ラクマ・Yahoo!フリマなどの売上について、確定申告が必要かどうかを質問に答えるだけで判定します。まず知っておきたい「生活用動産は原則非課税」というルールから、せどり・転売や高額品の例外まで一度に確認できます。</p>
+    <span class="updated-note">国税庁の所得税法上の取り扱い（生活用動産の譲渡・雑所得・基礎控除）にもとづく一般的な目安です。個別の税務判断は税務署・税理士にご確認ください。</span>
+  </header>
+
+  <div class="notice-box">
+    ⚠️ このツールは一般的な判定の目安を示すものであり、個々の事情（経費の範囲、事業的規模の判定など）によって結論が変わる場合があります。正確な判断は最寄りの税務署または税理士にご相談ください。
+  </div>
+
+  <section>
+    <h2>まず知っておきたい大原則</h2>
+    <p>メルカリやラクマで「着なくなった服」「読み終えた本」「使わなくなった家具・家電」など、<strong>普段の生活で使っていたもの</strong>を売った場合、これらは「生活用動産」として、利益が出ても所得税はかかりません（非課税）。フリマアプリの売上のほとんどは、実はこの原則だけで確定申告不要になります。</p>
+    <p>ただし例外が2つあります。①<strong>転売・せどり目的で仕入れた商品</strong>を売る場合は生活用動産に当たらず課税対象になります。②生活用動産であっても、<strong>1点30万円を超える貴金属・宝石・美術品・骨とう品</strong>は非課税の対象外です。この2つに当てはまらない限り、基本的に申告は不要です。</p>
+  </section>
+
+  <section>
+    <h2>あなたの場合をチェック</h2>
+    <div class="field-row">
+      <div class="field">
+        <label for="itemType">主に売っているものの種類</label>
+        <select id="itemType">
+          <option value="personal">普段使っていた服・本・家具・日用品など（生活用動産）</option>
+          <option value="resale">仕入れて転売している商品（せどり・転売ビジネス）</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="luxuryCheckRow" class="check-row">
+      <input type="checkbox" id="hasLuxury">
+      <label for="hasLuxury">この中に、1点30万円を超える貴金属・宝石・美術品・骨とう品が含まれる</label>
+    </div>
+
+    <div id="taxableFields">
+      <div class="field-row">
+        <div class="field">
+          <label for="profit">年間の利益（売上 − 仕入・経費、円）</label>
+          <input type="number" id="profit" min="0" step="10000" value="100000">
+        </div>
+        <div class="field">
+          <label for="hasSalary">給与所得はありますか？</label>
+          <select id="hasSalary">
+            <option value="yes">ある（会社員・パート等で年末調整済み）</option>
+            <option value="no">ない（学生・専業主婦（夫）・無職など）</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div id="statusBox" class="status-box"></div>
+
+    <div class="share-row" id="shareRow">
+      <a class="share-btn share-x" id="shareX" href="#" target="_blank" rel="noopener">𝕏でシェア</a>
+      <a class="share-btn share-line" id="shareLine" href="#" target="_blank" rel="noopener">LINEで送る</a>
+      <a class="share-btn share-fb" id="shareFb" href="#" target="_blank" rel="noopener">Facebookでシェア</a>
+      <a class="share-btn share-hatena" id="shareHatena" href="#" target="_blank" rel="noopener">はてブする</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>申告ラインの一覧</h2>
+    <div class="ref-table">
+      <table>
+        <thead><tr><th>ケース</th><th class="num">申告が必要になるライン</th></tr></thead>
+        <tbody>
+          <tr><td>生活用動産（30万円超の貴金属等を除く）</td><td class="num">非課税・申告不要</td></tr>
+          <tr class="highlight"><td>給与所得がある方（会社員など）</td><td class="num">利益が年20万円超</td></tr>
+          <tr class="highlight"><td>給与所得がない方（学生・主婦など）</td><td class="num">利益が年48万円超（基礎控除）</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="disclaimer">「20万円ルール」は所得税の確定申告に関する基準です。20万円以下で所得税の申告が不要な場合でも、住民税の申告は別途必要になることがあるため、お住まいの市区町村へご確認ください。</p>
+  </section>
+
+  <div class="pr-box">
+    <span class="pr-label">次のステップ</span>
+    <p class="pr-lede">確定申告が必要と分かったら、まずは手取り額の把握から始めましょう。</p>
+    <div class="pr-banner">
+      <a href="https://webtools-labs.com/frima-tedori-simulator/" class="pr-cta">フリマ手取りシミュレーター</a>
+      <a href="https://webtools-labs.com/fukugyo-shinkoku-keisan/" class="pr-cta" style="margin-left:0.6rem;">副業の確定申告チェッカー</a>
+    </div>
+  </div>
+
+  <div class="ad-slot">
+    <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-2370765779014113"
+      data-ad-slot="3021985784"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <section>
+    <h2>よくある質問</h2>
+    <details class="faq-item">
+      <summary>メルカリで着なくなった服や本を売っただけでも確定申告は必要ですか？</summary>
+      <p>原則不要です。普段の生活で使っていた衣類・本・家具・日用品などは「生活用動産」と呼ばれ、これらを売って得た利益には所得税がかかりません（非課税）。ただし1点あたり30万円を超える貴金属・宝石・美術品・骨とう品は例外的に課税対象になります。</p>
+    </details>
+    <details class="faq-item">
+      <summary>せどり・転売目的で仕入れた商品を売る場合はどうなりますか？</summary>
+      <p>「生活用動産」には当たらないため非課税の対象外です。利益は雑所得または事業所得として扱われ、一定の金額を超えると確定申告が必要になります。仕入れ値や送料などの経費を差し引いた「利益」で判断する点に注意してください。</p>
+    </details>
+    <details class="faq-item">
+      <summary>会社員が副業としてフリマで転売している場合の申告ラインはいくらですか？</summary>
+      <p>給与を1か所から受けていて年末調整が済んでいる会社員の場合、給与以外の所得（フリマの利益を含む）の合計が年間20万円を超えると所得税の確定申告が必要になります（いわゆる20万円ルール）。20万円以下でも住民税の申告は別途必要になる場合があるので注意してください。</p>
+    </details>
+    <details class="faq-item">
+      <summary>学生や専業主婦（夫）で給与所得が無い場合はいくらから申告が必要ですか？</summary>
+      <p>給与所得が無い場合、基礎控除額である48万円を超える所得（利益）があると原則として確定申告が必要になります。20万円ルールは給与所得者向けの特例なので、給与所得がない方には適用されません。</p>
+    </details>
+    <details class="faq-item">
+      <summary>30万円を超えるブランド品やアクセサリーを1点だけ売った場合はどうなりますか？</summary>
+      <p>生活用動産であっても、1点あたりの譲渡価額が30万円を超える貴金属・宝石・美術品・骨とう品等は非課税の対象外となり、譲渡所得として課税される可能性があります。取得費（購入価格）を差し引いた利益部分が課税対象です。</p>
+    </details>
+    <details class="faq-item">
+      <summary>確定申告をしなかった場合、どうなりますか？</summary>
+      <p>申告が必要な所得があるのに申告しなかった場合、後日税務署から指摘を受けると、本来の税額に加えて無申告加算税・延滞税等のペナルティが課される可能性があります。判断に迷う場合は税務署や税理士に相談することをおすすめします。</p>
+    </details>
+  </section>
+
+  <section class="contact-box">
+    <h2>ご意見・追加してほしい機能</h2>
+    <p class="lede" style="margin-bottom:0.9rem;">気づいたことや、あったら便利な機能があれば教えてください。</p>
+    <form id="contactForm">
+      <input type="email" id="contactEmail" placeholder="返信が必要な場合はメールアドレス（任意）">
+      <textarea id="contactMessage" placeholder="ご意見・ご要望をどうぞ" required></textarea>
+      <button type="submit" id="contactSubmit">送信する</button>
+      <p class="contact-status" id="contactStatus"></p>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <p>本ツールは所得税法上の一般的な取り扱いにもとづく目安を示すものであり、個別の税務相談・申告代行を行うものではありません。正確な判断は国税庁ホームページまたは税務署・税理士にご確認ください。</p>
+    <p>あわせて使える：
+      <a href="https://webtools-labs.com/frima-tesuryo-hikaku/">フリマ手数料計算・比較ツール</a> ／
+      <a href="https://webtools-labs.com/frima-hasso-hikaku/">フリマ配送方法・送料比較ツール</a> ／
+      <a href="https://webtools-labs.com/frima-tedori-simulator/">フリマ手取りシミュレーター</a> ／
+      <a href="https://webtools-labs.com/fukugyo-shinkoku-keisan/">副業の確定申告 要否チェッカー</a> ／
+      <a href="https://webtools-labs.com/saitei-chingin-checker/">最低賃金チェッカー</a> ／
+      <a href="https://webtools-labs.com/yukyu-hiyou-keisan/">有給休暇 付与日数計算ツール</a> ／
+      <a href="https://webtools-labs.com/revolving-risoku-keisan/">リボ払い・分割払い 実質利息計算ツール</a> ／
+      <a href="https://webtools-labs.com/taishoku-yukyu-keisan/">退職時の有給消化シミュレーター</a> ／
+      <a href="https://webtools-labs.com/fuyou-no-kabe-keisan/">扶養の壁チェッカー</a> ／
+      <a href="https://webtools-labs.com/tedori-keisan/">手取り計算ツール</a> ／
+      <a href="https://webtools-labs.com/taishokukin-zei-keisan/">退職金の税金計算ツール</a> ／
+      <a href="https://webtools-labs.com/taishokugo-hoken-hikaku-keisan/">退職後の健康保険 比較シミュレーター</a> ／
+      <a href="https://webtools-labs.com/sankyu-ikuji-teate-keisan/">産休・育休手当金シミュレーター</a> ／
+      <a href="https://webtools-labs.com/zangyodai-keisan/">残業代計算ツール</a> ／
+      <a href="https://webtools-labs.com/shitsugyo-hoken-keisan/">失業保険（基本手当）シミュレーター</a> ／
+      <a href="https://webtools-labs.com/jikyu-nenshu-keisan/">時給から年収・月収を計算</a> ／
+      <a href="https://webtools-labs.com/yubin-kitte-keisan/">郵便物の切手代早見表</a> ／
+      <a href="https://webtools-labs.com/bonus-tedori-keisan/">賞与手取り計算ツール</a> ／
+      <a href="https://webtools-labs.com/shoubyou-teate-keisan/">傷病手当金計算ツール</a> ／
+      <a href="https://webtools-labs.com/juminzei-keisan/">住民税計算ツール</a> ／
+      <a href="https://webtools-labs.com/tsukin-teate-keisan/">通勤手当の非課税限度額計算ツール</a> ／
+      <a href="https://webtools-labs.com/tedori-gyakusan-keisan/">手取りから逆算する年収計算ツール</a> ／
+      <a href="https://webtools-labs.com/shakaihoken-uchiwake-keisan/">給与の社会保険料 内訳計算ツール</a> ／
+      <a href="https://webtools-labs.com/nencho-kanpu-keisan/">年末調整 還付金シミュレーター</a> ／
+      <a href="https://webtools-labs.com/iryouhi-koujo-keisan/">医療費控除 計算ツール</a>
+    </p>
+    <p>当サイトは広告を掲載する場合があります。</p>
+    <p><a href="https://webtools-labs.com/about/">運営者情報</a> ／ <a href="https://webtools-labs.com/privacy/">プライバシーポリシー</a></p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  function yen(n) { return Math.round(n).toLocaleString('ja-JP') + '円'; }
+
+  var itemTypeSelect = document.getElementById('itemType');
+  var luxuryCheckRow = document.getElementById('luxuryCheckRow');
+  var hasLuxuryCheckbox = document.getElementById('hasLuxury');
+  var taxableFields = document.getElementById('taxableFields');
+  var profitInput = document.getElementById('profit');
+  var hasSalarySelect = document.getElementById('hasSalary');
+  var statusBox = document.getElementById('statusBox');
+  var shareX = document.getElementById('shareX');
+  var shareLine = document.getElementById('shareLine');
+  var shareFb = document.getElementById('shareFb');
+  var shareHatena = document.getElementById('shareHatena');
+
+  function setShareLinks(text, url) {
+    shareX.href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url);
+    shareLine.href = 'https://line.me/R/msg/text/?' + encodeURIComponent(text + '\n' + url);
+    shareFb.href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url) + '&quote=' + encodeURIComponent(text);
+    shareHatena.href = 'https://b.hatena.ne.jp/entry/panel/?url=' + encodeURIComponent(url) + '&title=' + encodeURIComponent(text);
+  }
+
+  function render() {
+    var itemType = itemTypeSelect.value;
+    var isPersonal = itemType === 'personal';
+    var hasLuxury = hasLuxuryCheckbox.checked;
+
+    luxuryCheckRow.style.display = isPersonal ? 'flex' : 'none';
+
+    // 生活用動産のみ・高額品なし → 非課税で判定終了
+    var isTaxable = !isPersonal || (isPersonal && hasLuxury);
+    taxableFields.style.display = isTaxable ? 'block' : 'none';
+
+    var shareText, resultLabel;
+
+    if (!isTaxable) {
+      statusBox.className = 'status-box ok';
+      statusBox.innerHTML =
+        '✅ <strong>確定申告は原則不要です</strong><br>' +
+        '普段の生活で使っていたもの（生活用動産）の売却による利益は、所得税がかかりません。金額の大小にかかわらず、原則として確定申告の必要はありません。';
+      resultLabel = '申告不要（生活用動産の非課税）';
+      shareText = 'フリマ(生活用動産の売却)は確定申告が原則不要という結果でした\n\nフリマの確定申告 要否チェッカー';
+    } else {
+      var profit = Math.max(0, Number(profitInput.value) || 0);
+      var hasSalary = hasSalarySelect.value === 'yes';
+      var threshold = hasSalary ? 200000 : 480000;
+      var needsFiling = profit > threshold;
+      var reasonLine = isPersonal
+        ? '（30万円超の貴金属・美術品等は生活用動産の非課税対象外のため）'
+        : '（転売・せどり目的の仕入れ品は生活用動産にあたらないため）';
+
+      if (needsFiling) {
+        statusBox.className = 'status-box bad';
+        statusBox.innerHTML =
+          '⚠️ <strong>確定申告が必要な可能性が高いです</strong><br>' +
+          reasonLine + '、この利益は課税対象です。' +
+          (hasSalary
+            ? '給与所得がある場合、給与以外の所得が年20万円を超えると所得税の確定申告が必要です（現在の利益: ' + yen(profit) + '）。'
+            : '給与所得が無い場合、所得が基礎控除の48万円を超えると確定申告が必要です（現在の利益: ' + yen(profit) + '）。') +
+          '<ul><li>正確な経費（仕入れ値・送料・梱包資材代など）を差し引いた利益で判断してください</li><li>判断に迷う場合は税務署・税理士にご相談ください</li></ul>';
+        resultLabel = '確定申告が必要な可能性が高い';
+      } else {
+        statusBox.className = 'status-box warn';
+        statusBox.innerHTML =
+          '△ <strong>所得税の確定申告は不要な可能性が高いです</strong>（住民税の申告は別途必要な場合があります）<br>' +
+          reasonLine + '課税対象ではありますが、' +
+          (hasSalary ? '給与以外の所得が年20万円以下' : '所得が基礎控除の48万円以下') +
+          'のため、所得税の確定申告ラインには達していません（現在の利益: ' + yen(profit) + '）。' +
+          '<ul><li>所得税の申告が不要でも、お住まいの市区町村への住民税の申告が必要な場合があります</li><li>今後利益が増える場合は、都度このラインを確認してください</li></ul>';
+        resultLabel = '所得税の申告は不要ライン以下（住民税は要確認）';
+      }
+      shareText = 'フリマの利益' + yen(profit) + 'で確定申告の要否を判定 → ' + resultLabel + '\n\nフリマの確定申告 要否チェッカー';
+    }
+
+    setShareLinks(shareText, 'https://webtools-labs.com/frima-kakuteishinkoku-checker/');
+  }
+
+  itemTypeSelect.addEventListener('change', render);
+  hasLuxuryCheckbox.addEventListener('change', render);
+  profitInput.addEventListener('input', render);
+  hasSalarySelect.addEventListener('change', render);
+
+  render();
+
+  var WEB3FORMS_ACCESS_KEY = '4551c9fd-4327-4bd4-97e0-8b93d85fd077';
+  var contactForm = document.getElementById('contactForm');
+  var contactStatus = document.getElementById('contactStatus');
+  var contactSubmit = document.getElementById('contactSubmit');
+
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    contactSubmit.disabled = true;
+    contactStatus.textContent = '送信中...';
+    contactStatus.className = 'contact-status';
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_ACCESS_KEY,
+        subject: 'フリマの確定申告 要否チェッカーへのお問い合わせ',
+        email: document.getElementById('contactEmail').value || 'noreply@example.com',
+        message: document.getElementById('contactMessage').value
+      })
+    }).then(function (res) { return res.json(); }).then(function (data) {
+      contactSubmit.disabled = false;
+      if (data.success) {
+        contactStatus.textContent = '送信しました。ありがとうございます！';
+        contactStatus.className = 'contact-status ok';
+        contactForm.reset();
+      } else {
+        contactStatus.textContent = '送信に失敗しました。時間をおいて再度お試しください。';
+        contactStatus.className = 'contact-status err';
+      }
+    }).catch(function () {
+      contactSubmit.disabled = false;
+      contactStatus.textContent = '送信に失敗しました。時間をおいて再度お試しください。';
+      contactStatus.className = 'contact-status err';
+    });
+  });
+})();
+</script>
+</body>
+</html>
