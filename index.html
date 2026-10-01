@@ -92,6 +92,16 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://webtools-labs.com/" },
+    { "@type": "ListItem", "position": 2, "name": "フリマの確定申告 要否チェッカー" }
+  ]
+}
+</script>
 <style>
 :root {
   --bg: #ffffff;
@@ -242,10 +252,14 @@ footer.site-footer a { color: var(--accent); }
 }
 .faq-item[open] summary::after { content: '−'; }
 .faq-item p { margin: 0.7rem 0 0; color: var(--muted); font-size: 0.88rem; }
+.breadcrumb { font-size: 0.78rem; color: var(--muted); margin-bottom: 1.1rem; }
+.breadcrumb a { color: var(--accent); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
 <div class="page">
+  <nav class="breadcrumb" aria-label="パンくずリスト"><a href="https://webtools-labs.com/">ホーム</a> / フリマの確定申告 要否チェッカー</nav>
   <header class="masthead">
     <h1>フリマの確定申告 要否チェッカー</h1>
     <p class="lede">メルカリ・ラクマ・Yahoo!フリマなどの売上について、確定申告が必要かどうかを質問に答えるだけで判定します。まず知っておきたい「生活用動産は原則非課税」というルールから、せどり・転売や高額品の例外まで一度に確認できます。</p>
