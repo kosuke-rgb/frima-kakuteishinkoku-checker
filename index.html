@@ -77,7 +77,7 @@
     {
       "@type": "Question",
       "name": "学生や専業主婦（夫）で給与所得が無い場合はいくらから申告が必要ですか？",
-      "acceptedAnswer": { "@type": "Answer", "text": "給与所得が無い場合、基礎控除額である48万円を超える所得（利益）があると原則として確定申告が必要になります。20万円ルールは給与所得者向けの特例なので、給与所得がない方には適用されません。" }
+      "acceptedAnswer": { "@type": "Answer", "text": "給与所得が無い場合、基礎控除額（令和8年分は合計所得489万円以下なら104万円）を超える所得（利益）があると原則として確定申告が必要になります。20万円ルールは給与所得者向けの特例なので、給与所得がない方には適用されません。" }
     },
     {
       "@type": "Question",
@@ -327,7 +327,7 @@ footer.site-footer a { color: var(--accent); }
         <tbody>
           <tr><td>生活用動産（30万円超の貴金属等を除く）</td><td class="num">非課税・申告不要</td></tr>
           <tr class="highlight"><td>給与所得がある方（会社員など）</td><td class="num">利益が年20万円超</td></tr>
-          <tr class="highlight"><td>給与所得がない方（学生・主婦など）</td><td class="num">利益が年48万円超（基礎控除）</td></tr>
+          <tr class="highlight"><td>給与所得がない方（学生・主婦など）</td><td class="num">利益が年104万円超（基礎控除、令和8年分）</td></tr>
         </tbody>
       </table>
     </div>
@@ -387,7 +387,7 @@ footer.site-footer a { color: var(--accent); }
     </details>
     <details class="faq-item">
       <summary>学生や専業主婦（夫）で給与所得が無い場合はいくらから申告が必要ですか？</summary>
-      <p>給与所得が無い場合、基礎控除額である48万円を超える所得（利益）があると原則として確定申告が必要になります。20万円ルールは給与所得者向けの特例なので、給与所得がない方には適用されません。</p>
+      <p>給与所得が無い場合、基礎控除額（令和8年分は合計所得489万円以下なら104万円）を超える所得（利益）があると原則として確定申告が必要になります。20万円ルールは給与所得者向けの特例なので、給与所得がない方には適用されません。</p>
     </details>
     <details class="faq-item">
       <summary>30万円を超えるブランド品やアクセサリーを1点だけ売った場合はどうなりますか？</summary>
@@ -492,7 +492,7 @@ footer.site-footer a { color: var(--accent); }
     } else {
       var profit = Math.max(0, Number(profitInput.value) || 0);
       var hasSalary = hasSalarySelect.value === 'yes';
-      var threshold = hasSalary ? 200000 : 480000;
+      var threshold = hasSalary ? 200000 : 1040000; // 給与なしの場合は基礎控除（令和8年分は104万円）
       var needsFiling = profit > threshold;
       var reasonLine = isPersonal
         ? '（30万円超の貴金属・美術品等は生活用動産の非課税対象外のため）'
@@ -505,7 +505,7 @@ footer.site-footer a { color: var(--accent); }
           reasonLine + '、この利益は課税対象です。' +
           (hasSalary
             ? '給与所得がある場合、給与以外の所得が年20万円を超えると所得税の確定申告が必要です（現在の利益: ' + yen(profit) + '）。'
-            : '給与所得が無い場合、所得が基礎控除の48万円を超えると確定申告が必要です（現在の利益: ' + yen(profit) + '）。') +
+            : '給与所得が無い場合、所得が基礎控除（令和8年分は104万円）を超えると確定申告が必要です（現在の利益: ' + yen(profit) + '）。') +
           '<ul><li>正確な経費（仕入れ値・送料・梱包資材代など）を差し引いた利益で判断してください</li><li>判断に迷う場合は税務署・税理士にご相談ください</li></ul>';
         resultLabel = '確定申告が必要な可能性が高い';
       } else {
@@ -513,7 +513,7 @@ footer.site-footer a { color: var(--accent); }
         statusBox.innerHTML =
           '△ <strong>所得税の確定申告は不要な可能性が高いです</strong>（住民税の申告は別途必要な場合があります）<br>' +
           reasonLine + '課税対象ではありますが、' +
-          (hasSalary ? '給与以外の所得が年20万円以下' : '所得が基礎控除の48万円以下') +
+          (hasSalary ? '給与以外の所得が年20万円以下' : '所得が基礎控除（令和8年分は104万円）以下') +
           'のため、所得税の確定申告ラインには達していません（現在の利益: ' + yen(profit) + '）。' +
           '<ul><li>所得税の申告が不要でも、お住まいの市区町村への住民税の申告が必要な場合があります</li><li>今後利益が増える場合は、都度このラインを確認してください</li></ul>';
         resultLabel = '所得税の申告は不要ライン以下（住民税は要確認）';
