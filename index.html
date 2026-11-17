@@ -167,7 +167,7 @@ h2 { font-size: 1.05rem; font-weight: 700; margin: 0 0 1rem; }
 .status-box li { margin-bottom: 0.3rem; }
 
 .ref-table { overflow-x: auto; }
-.ref-table table { width: 100%; border-collapse: collapse; font-size: 0.86rem; min-width: 420px; }
+.ref-table table { width: 100%; border-collapse: collapse; font-size: 0.86rem; min-width: 0; }
 .ref-table th, .ref-table td { padding: 0.55rem 0.5rem; border-bottom: 1px solid var(--line); text-align: left; }
 .ref-table td.num { font-variant-numeric: tabular-nums; text-align: right; }
 
@@ -258,6 +258,15 @@ footer.site-footer a { color: var(--accent); }
 .breadcrumb { font-size: 0.78rem; color: var(--muted); margin-bottom: 1.1rem; }
 .breadcrumb a { color: var(--accent); text-decoration: none; }
 .breadcrumb a:hover { text-decoration: underline; }
+/* スマホで表が画面からはみ出さないように（2026-11-17） */
+@media (max-width: 600px) {
+  .ref-table table { font-size: 0.8rem; }
+  .ref-table th, .ref-table td { padding: 0.45rem 0.3rem; }
+  .ref-table th, .ref-table td:first-child { white-space: normal; }
+  .ref-table td.nw { white-space: nowrap; }
+  .ref-table th:first-child, .ref-table td:first-child { min-width: 5em; position: sticky; left: 0; z-index: 1; background: var(--bg); box-shadow: 1px 0 0 var(--line); }
+  .ref-table tr.best td:first-child, .ref-table tr.total td:first-child, .ref-table tr.next td:first-child, .ref-table tr.highlight td:first-child { background: var(--best-bg, var(--bg)); }
+}
 </style>
 </head>
 <body>
@@ -362,12 +371,12 @@ footer.site-footer a { color: var(--accent); }
     <div class="ref-table" style="overflow-x:auto">
       <table>
         <tbody>
-          <tr><td>1年間の売上</td><td class="num">500,000円</td></tr>
-          <tr><td>仕入れ代（売れた商品の分）</td><td class="num">−250,000円</td></tr>
-          <tr><td>フリマアプリの販売手数料（10%）</td><td class="num">−50,000円</td></tr>
-          <tr><td>送料</td><td class="num">−30,000円</td></tr>
-          <tr><td>梱包資材代</td><td class="num">−10,000円</td></tr>
-          <tr class="best"><td>利益（所得）</td><td class="num">170,000円</td></tr>
+          <tr><td>1年間の売上</td><td class="num nw">500,000円</td></tr>
+          <tr><td>仕入れ代（売れた商品の分）</td><td class="num nw">−250,000円</td></tr>
+          <tr><td>フリマアプリの販売手数料（10%）</td><td class="num nw">−50,000円</td></tr>
+          <tr><td>送料</td><td class="num nw">−30,000円</td></tr>
+          <tr><td>梱包資材代</td><td class="num nw">−10,000円</td></tr>
+          <tr class="best"><td>利益（所得）</td><td class="num nw">170,000円</td></tr>
         </tbody>
       </table>
     </div>
